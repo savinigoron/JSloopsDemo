@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Java Script Loops in Action</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Java Script Loops in Action</h1>
+    </header>
+    <main>
+        <section>
+            <h2>JavaScript Calculator</h2>
+            <p>Determine the sum of all numbers (beginning of zero) up to a number of your choice</p>
+            <div class="control">
+                <label for="usernumber">Your Number</label>
+                <input type="number" name="user-number" id="usernumber">
+                <button type="submit" class="calculate">Calculate Sum</button>
+            </div>
+            <p class="output" id="calculated-sum"></p>
+        </section>
+        <section>
+            <h2>Highlight Links</h2>
+            <button type="submit" id="hightlight-button">Hightlight all links in the text</button>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                laudantium exercitationem sequi nisi, fugiat placeat quas soluta
+                reprehenderit libero eligendi, ex sit laboriosam quod inventore,
+                nobis maiores aliquid! <a href="#">Accusamus</a> , odio?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                laudantium exercitationem sequi nisi, fugiat placeat quas soluta
+                reprehenderit <a href="#">libero</a> eligendi, ex sit laboriosam quod inventore,
+                nobis maiores aliquid! Accusamus, odio?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                <a href="#">laudantium</a> exercitationem sequi nisi, fugiat placeat quas soluta
+                reprehenderit libero eligendi, ex sit laboriosam quod inventore,
+                nobis maiores aliquid! Accusamus, odio?
+            </p>
+        </section>
+        <section>
+            <h2>Your Information</h2>
+            <button id="displayDataButton">Display User Data</button>
+            <ul class="output-data"></ul>
+        </section>
+        <section id="statistics">
+            <h2>Statistic</h2>
+            <p>
+                Test your luck and find out how many rolls(1-6 dice) it takes you
+                to roll a certain number (between 1 and 6);
+            </p>
+            <div class="control">
+                <label for="user-target-number">Your Target Number</label>
+                <input type="number" min="1" max="6" id="user-target-number" required>
+            </div>
+            <button>Roll the Dice</button>
+            <ul id="dice-rolls"></ul>
+            <p>It took you <span id="output-rolls">X</span> rolls to roll a <span id="output-number">Y</span>.</p>
+            
+        </section>
+    </main>
+</body>
+
+</html>
